@@ -8,4 +8,3 @@ def test_counter():
 
     with patch("builtins.open", mock_open(read_data=json.dumps(content))):
         assert count_ocurrences("dummy", "T") == 3
-    pass
